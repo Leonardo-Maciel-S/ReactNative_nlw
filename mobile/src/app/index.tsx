@@ -1,15 +1,20 @@
-import {View} from 'react-native'
+import { View } from "react-native";
+import { router } from "expo-router";
 
-import { Steps } from '@/components/steps'
-import { Welcome } from '@/components/welcome'
+import { Steps } from "@/components/steps";
+import { Welcome } from "@/components/welcome";
+import { Button } from "@/components/button";
 
 export default function Index() {
-  return (
-    <View style={{flex: 1, padding: 40, gap: 20}}>
-      <Welcome/>
+	return (
+		<View style={{ flex: 1, padding: 40, gap: 20 }}>
+			<Welcome />
 
-      <Steps/>
+			<Steps />
 
-    </View>
-  )
+			<Button onPress={() => router.navigate("/home")}>
+				<Button.Title>Começar</Button.Title>
+			</Button>
+		</View>
+	);
 }

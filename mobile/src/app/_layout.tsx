@@ -7,7 +7,7 @@ import {
   Rubik_400Regular,
   Rubik_500Medium,
   Rubik_700Bold
-} from '@expo-google-fonts/rubik' 
+} from '@expo-google-fonts/rubik'
 
 import Loading from "@/components/loading"
 
