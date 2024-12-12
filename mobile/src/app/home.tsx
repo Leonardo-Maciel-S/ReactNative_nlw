@@ -8,6 +8,7 @@ import { Categories, type CategoriesProps } from "@/components/categories";
 
 import { api } from "@/services/api";
 import { colors, fontFamily } from "@/styles/theme";
+import { router } from "expo-router";
 
 type MarketProps = PlaceProps & {
 	latitude: number;
@@ -92,7 +93,7 @@ export default function Home() {
 							longitude: item.longitude,
 						}}
 					>
-						<Callout>
+						<Callout onPress={() => router.navigate(`/market/${item.id}`)}>
 							<View>
 								<Text
 									style={{
