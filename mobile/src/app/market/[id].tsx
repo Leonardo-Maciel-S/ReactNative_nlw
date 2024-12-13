@@ -44,7 +44,7 @@ export default function Market() {
 		}
 	}
 
-	async function handleOpenCmaera() {
+	async function handleOpenCamera() {
 		try {
 			const { granted } = await requestPermission();
 
@@ -119,7 +119,7 @@ export default function Market() {
 					padding: 32,
 				}}
 			>
-				<Button onPress={handleOpenCmaera}>
+				<Button onPress={handleOpenCamera}>
 					<Button.Title>Ler QR Code</Button.Title>
 				</Button>
 			</View>
