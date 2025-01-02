@@ -17,7 +17,7 @@ Projeto de app mobile Android / IOS feito durante o NLW Mobile da @RocketSeat ut
 
 ## Conhecimentos adquiridos
 Nesse projeto aprendi conceitos como: 
-- rotas com o Expo
+- Rotas com o Expo
 - Consumo de API
 - Maps
 - Acesso a permissões como de câmera
